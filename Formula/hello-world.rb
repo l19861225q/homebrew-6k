@@ -6,7 +6,7 @@ class HelloWorld < Formula
 
   def install
     system "g++", "./hello-world.cpp", "-o", "hello-world"
-    bin.install hello-world
+    # bin.install hello-world
     # mkdir "build" do
     #   system "cmake", ".."
     #   system "make"
