@@ -1,6 +1,6 @@
 class HelloWorld < Formula
   desc "hello world demo"
-  url "https://github.com/l19861225q/homebrew-6k", :using => :git, :tag => '0.0.1'
+  url "https://github.com/l19861225q/homebrew-6k", :using => :git
 
   depends_on "cmake" => :build
 
