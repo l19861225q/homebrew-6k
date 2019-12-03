@@ -5,10 +5,12 @@ class HelloWorld < Formula
   depends_on "cmake" => :build
 
   def install
-    mkdir "build" do
-      system "cmake", ".."
-      system "make"
-    end
+    system "g++", "./hello-world.cpp", "-o", "hello-world"
     bin.install hello-world
+    # mkdir "build" do
+    #   system "cmake", ".."
+    #   system "make"
+    # end
+    # bin.install hello-world
   end
 end
